@@ -1,0 +1,269 @@
+@font-face{
+	font-family: MyriadPro;
+	src: url("fonts/MyriadPro-Regular.otf");
+}
+body{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to top, #191919, #040404);
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.wrapp{
+	width: 960px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	height: 115px;
+}
+.logo{
+	float: left;
+	width: 320px;
+	margin: 10px 0;
+}
+.logo a{
+	display: block;
+}
+.contact-block{
+	background: url(images/social-list.png) no-repeat;
+	height: 10px;
+	width: 90px;
+	float: right;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+.contatct-list{
+
+}
+nav{
+	width: 485px;
+	height: 49px;
+	background: linear-gradient(to top, #cecece, #fefefe);
+	float: right;
+	clear: right;
+	border-bottom: 1px solid #ffffff;
+}
+.nav-menu{
+	height: inherit;
+	position: relative;
+}
+.nav-menu li{
+	display: inline-block;
+	height: inherit;
+}
+.nav-menu li a{
+	display: block;
+	color: #585858;
+	font-weight: 800;
+	font-size: 17px;
+	font-family: MyriadPro;
+	padding:  0 13px; 
+	height: inherit;
+	line-height: 48px;
+}
+.nav-menu li:first-child a{
+	padding-left: 7px;
+	border-right: 1px solid #c9c9c9;
+}
+.nav-menu li:last-child a{
+	padding-right: 5px;
+	border-left: 1px solid #c9c9c9;
+}
+.dropdown{
+	position: relative;
+}
+.dropdown:hover{
+	background: url(images/bg-narrow.png) no-repeat;
+	background-position: 50% 0;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	right: 14px;
+	width: 470px;
+	height: 163px;
+	color: #707070;
+	padding: 10px 15px 33px 18px;
+	background: url(images/bg-menu.png) no-repeat;
+	margin: 0;
+	margin-top: 30px;
+	z-index: 1;
+	box-sizing: border-box;
+}
+.dropdown-content h3{
+	font-family: MyriadPro;
+}
+.dropdown-content p{
+	font-family: Verdana;
+	font-size: 12px;
+}
+.link1:hover+.content1{
+	display: block;
+	transition: ease-in-out .2s
+}
+.link2:hover+.content2{
+	display: block;
+	transition: ease-in-out .2s
+}
+.link3:hover+.content3{
+	display: block;
+	transition: ease-in-out .2s
+}
+.link4:hover+.content4{
+	display: block;
+	transition: ease-in-out .2s
+}
+.link5:hover+.content5{
+	display: block;
+	transition: ease-in-out .2s
+}
+
+
+section{
+	height: 630px;
+	position: relative;
+	border-bottom: 1px solid #636363;
+}
+/*///////////////Slider//////*/
+.slider-wrapper{
+	width: inherit;
+	height: 360px;
+}
+.top-border{
+	background: url(images/top-border.png) no-repeat;
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+	height: 20px;
+}
+.slider-wrapper input{
+	display: none;
+}
+.slider{
+	width: 100%;
+	height: 325px;
+	overflow: hidden; 
+}
+
+.slides{
+	height: inherit;
+	width: inherit;
+	position: absolute;
+}
+.slide1{
+	background: url(images/slider1.png) no-repeat;
+}
+.slide2{
+	background: url(images/slider2.png) no-repeat;
+}
+.controls{
+	text-align: center;
+}
+.controls label{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 2px solid #7b7a7a;
+	display: inline-block;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.controls label:hover{
+	background: red;
+}
+
+.controls label:checked label{
+	background: red;
+
+}
+/*///////////End Slider//////*/
+article{
+	height: 250px;
+	background: #fff;
+	border-radius: 12px;
+	position: relative;
+}
+.article-top{
+	background: url(images/article-top.png) no-repeat;
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+	height: 20px;
+}
+.article-block{
+	width: 295px;
+	height: 100%;
+	float: left;
+	padding-top: 40px;
+	box-sizing: border-box;
+	margin-right: 30px;	
+}
+
+.article-block:last-child{
+	margin-right: 0;
+}
+.title{
+	width: 235px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 26px;
+	font-family: MyriadPro;
+	font-size: 18px;
+	background: url(images/bg-article-title.png) no-repeat;
+	color: #fff;
+}
+.article-block p{
+	color: #000;
+	font-family: Verdana;
+	font-size: 12px;
+	padding: 0 0 40px 26px;
+	border-left:  1px dashed #4f4f4f;
+}
+#noborder{
+	border-left:   none;
+}
+.article-block a{
+	float: right;
+	color: red;
+	font-size: 10px;
+	margin-top: 30px;
+}
+/*//////////FOOTER/////*/
+
+footer{
+	height: 80px;
+	padding-top: 20px;
+}
+.footer-logo{
+	float: left;
+	width: 200px;
+	color: #fff;
+	margin-right: 115px;
+}
+.footer-logo p{
+	font-size: 12px;
+}
+
+.footer-nav{
+	height: 48px;
+}
+
+.footer-nav li{
+	display: inline-block;
+	padding-right: 20px;
+}
+.footer-nav li a{
+	color: #ccc;
+	width: inherit;
+}
+.footer-nav li a:hover{
+	color: red;
+	transition: ease-in 0.2s;
+}
